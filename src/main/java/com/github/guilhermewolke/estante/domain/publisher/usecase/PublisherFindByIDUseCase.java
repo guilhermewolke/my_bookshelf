@@ -1,7 +1,5 @@
 package com.github.guilhermewolke.estante.domain.publisher.usecase;
 
-import com.github.guilhermewolke.estante.domain.publisher.dto.InputDTO;
-import com.github.guilhermewolke.estante.domain.publisher.dto.OutputDTO;
 import com.github.guilhermewolke.estante.domain.publisher.dto.PublisherFindByIDInputDTO;
 import com.github.guilhermewolke.estante.domain.publisher.dto.PublisherOutputDTO;
 import com.github.guilhermewolke.estante.domain.publisher.service.PublisherService;

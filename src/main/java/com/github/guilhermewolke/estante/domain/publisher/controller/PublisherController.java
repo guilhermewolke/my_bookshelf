@@ -35,7 +35,7 @@ public class PublisherController {
     public ResponseEntity<PublisherInsertOutputDTO> create(@RequestBody @Valid PublisherInsertInputDTO data, UriComponentsBuilder uriBuilder) {
         System.out.println("Controller Name:" + data.getName());
         PublisherInsertOutputDTO output = this.useCases.getInsertUseCase().execute(data);
-        var uri = uriBuilder.path("/editoras/{id}").buildAndExpand(output.getID()).toUri();
+        var uri = uriBuilder.path("/editoras/{id}").buildAndExpand(output.getId()).toUri();
         return ResponseEntity.created(uri).body(output);
     }
 
