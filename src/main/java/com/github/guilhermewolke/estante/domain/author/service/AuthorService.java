@@ -15,7 +15,7 @@ public class AuthorService {
     private AuthorRepository repository;
 
     public AuthorInsertOutputDTO create(AuthorInsertInputDTO data) {
-        AuthorEntity entity = new AuthorEntity(null, data.getName());
+        AuthorEntity entity = new AuthorEntity(data.getName());
         this.repository.save(entity);
         return new AuthorInsertOutputDTO(entity);
     }
